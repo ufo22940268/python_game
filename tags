@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+.DEFAULT_GOAL	Makefile	/^.DEFAULT_GOAL := all$/;"	m
+BOT_NAME	tutorial/settings.py	/^BOT_NAME = 'tutorial'$/;"	v
+Detail	tutorial/spiders/detail.py	/^class Detail(Item):$/;"	c
+DetailSpider	tutorial/spiders/detail.py	/^class DetailSpider(BaseSpider):$/;"	c
+ListSpider	tutorial/spiders/list.py	/^class ListSpider(BaseSpider):$/;"	c
+NEWSPIDER_MODULE	tutorial/settings.py	/^NEWSPIDER_MODULE = 'tutorial.spiders'$/;"	v
+SPIDER_MODULES	tutorial/settings.py	/^SPIDER_MODULES = ['tutorial.spiders']$/;"	v
+TutorialItem	tutorial/items.py	/^class TutorialItem(Item):$/;"	c
+TutorialPipeline	tutorial/pipelines.py	/^class TutorialPipeline(object):$/;"	c
+Website	tutorial/spiders/list.py	/^class Website(Item):$/;"	c
+allowed_domains	tutorial/spiders/detail.py	/^    allowed_domains = ["thepiratebay.sx"]$/;"	v	class:DetailSpider
+allowed_domains	tutorial/spiders/list.py	/^    allowed_domains = ["thepiratebay.sx"]$/;"	v	class:ListSpider
+clear_game	tutorial/db.py	/^def clear_game():$/;"	f
+desc	tutorial/items.py	/^     desc = Field()$/;"	v	class:TutorialItem
+get_db	tutorial/db.py	/^def get_db():$/;"	f
+insert_item	tutorial/db.py	/^def insert_item(i):$/;"	f
+link	tutorial/items.py	/^     link = Field()$/;"	v	class:TutorialItem
+link	tutorial/spiders/list.py	/^    link = Field()$/;"	v	class:Website
+name	tutorial/spiders/detail.py	/^    name = "detail"$/;"	v	class:DetailSpider
+name	tutorial/spiders/detail.py	/^    name = Field()$/;"	v	class:Detail
+name	tutorial/spiders/list.py	/^    name = "list"$/;"	v	class:ListSpider
+name	tutorial/spiders/list.py	/^    name = Field()$/;"	v	class:Website
+parse	tutorial/spiders/detail.py	/^    def parse(self, response):$/;"	m	class:DetailSpider
+parse	tutorial/spiders/list.py	/^    def parse(self, response):$/;"	m	class:ListSpider
+process_item	tutorial/pipelines.py	/^    def process_item(self, item, spider):$/;"	m	class:TutorialPipeline
+start_urls	tutorial/spiders/detail.py	/^    start_urls = [$/;"	v	class:DetailSpider
+start_urls	tutorial/spiders/list.py	/^    start_urls = [$/;"	v	class:ListSpider
+title	tutorial/items.py	/^     title = Field()$/;"	v	class:TutorialItem
